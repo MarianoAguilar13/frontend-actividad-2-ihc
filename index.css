@@ -1,0 +1,681 @@
+* {
+  box-sizing: border-box;
+  font-family: var(--poppins);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--poppins);
+}
+
+:root {
+  --azulMarinoArmy: #00304e;
+  --azulMarinoAutos: #19284c;
+  --grisOscuro: #535b61;
+  --grisClaro: #c6c6c6;
+  --blanco: #f5f5f5;
+  --poppins: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: var(--azulMarinoArmy);
+}
+
+.hero-container {
+  width: 100%;
+  height: calc(100vh - 130px);
+  background-image: url("http://drive.google.com/uc?export=view&id=1YYM8452PLjyZ8apBDn2iw87QgbuZpBZr");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container__title {
+  color: var(--blanco);
+  font-size: 64px;
+  border: 3px solid var(--grisOscuro);
+  background-color: var(--azulMarinoArmy);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero-container__eslogan {
+  color: var(--blanco);
+  font-size: 48px;
+  border: 3px solid var(--grisOscuro);
+  background-color: var(--azulMarinoArmy);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* sobre nosotros  */
+
+.sobre-nos {
+  background-color: var(--azulMarinoAutos);
+  height: 100vh;
+  width: 100%;
+  color: var(--blanco);
+}
+
+.sobre-nos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.sobre-nos-title {
+  margin-top: 20px;
+  font-size: 48px;
+}
+
+.sobre-nos-info-container {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sobre-nos-img-main {
+  width: 45%;
+  height: 90%;
+  border-radius: 20px;
+  border: solid 5px var(--grisOscuro);
+}
+
+.info-container {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-container-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.info-container-parrafo {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.sobre-nos-container-imagenes {
+  display: flex;
+  height: 35%;
+  width: 80%;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.sobre-nos-img-aux {
+  width: 35%;
+  height: 90%;
+  border-radius: 20px;
+  border: solid 5px var(--grisOscuro);
+}
+
+/*SERVICIOS */
+
+.servicios {
+  background-color: var(--grisClaro);
+  min-height: 100vh;
+  width: 100%;
+  color: var(--blanco);
+}
+
+.servicios-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.servicios-title {
+  margin-top: 20px;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.servicios-card-container {
+  width: 80%;
+}
+
+.servicios-button-ver-mas {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  border: solid 5px var(--grisOscuro);
+  background-color: var(--azulMarinoAutos);
+  border-radius: 20px;
+  color: var(--grisClaro);
+  margin-bottom: 20px;
+}
+
+/*productos */
+
+.productos {
+  background-color: var(--azulMarinoAutos);
+  height: 100vh;
+  width: 100%;
+  color: var(--blanco);
+}
+
+.productos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.productos-title {
+  margin-top: 20px;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.productos-card-container {
+  width: 80%;
+  display: flex;
+  height: 80%;
+  width: 80%;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* ACA ESTAN LOS ESTIOLOS DEL CONTACTO */
+.contacto {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--grisClaro);
+}
+
+.contacto__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--grisClaro);
+}
+
+@media (max-width: 768px) {
+  .contacto__container {
+    justify-content: center;
+  }
+}
+
+.contacto__container__title {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contenedor-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: black;
+  justify-content: start;
+  align-items: center;
+  align-self: center;
+  height: 90%;
+  width: 100%;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .contenedor-form {
+    margin-top: 60px;
+  }
+}
+
+.contenedor-form__form {
+  min-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-form__form {
+    width: 100%;
+  }
+}
+
+.contenedor-form__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .contenedor-form__fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contenedor-form__label {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-form__label {
+    width: 80%;
+    text-align: start;
+  }
+}
+
+.contenedor-form__select {
+  background-color: var(--azulMarinoAutos);
+  border: none;
+  font-size: 18px;
+  border-radius: 15px;
+  color: var(--blanco);
+  appearance: none;
+}
+
+.select-container {
+  width: 100%;
+  height: 35px;
+  background-color: var(--azulMarinoAutos);
+  border: var(--grisOscuro) 5px solid;
+  border-radius: 15px;
+  font-size: 18px;
+  color: var(--blanco);
+}
+
+.contenedor-form__input-text {
+  width: 100%;
+  height: 35px;
+  background-color: var(--azulMarinoAutos);
+  border: var(--grisOscuro) 5px solid;
+  border-radius: 15px;
+  font-size: 18px;
+  color: var(--blanco);
+}
+
+@media (max-width: 768px) {
+  .contenedor-form__input-text {
+    width: 80%;
+  }
+}
+
+.contenedor-form__textarea {
+  width: 100%;
+  height: 100px;
+  color: var(--blanco);
+  background-color: var(--azulMarinoAutos);
+  border: var(--grisOscuro) 5px solid;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-form__textarea {
+    width: 80%;
+  }
+}
+
+.contenedor-form__button-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: white;
+  justify-content: start;
+  align-items: center;
+  align-self: center;
+  height: 45px;
+}
+
+.button-form {
+  width: 50%;
+  height: 100%;
+  background-color: var(--azulMarinoAutos);
+  border: var(--blanco) 5px solid;
+  border-radius: 15px;
+  color: var(--blanco);
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/*ACA ESTAN LOS ESTILOS DEL FOOTER */
+
+.footer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: var(--azulMarinoArmy);
+}
+
+@media (min-width: 769px) {
+  .footer {
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--azulMarinoArmy);
+  }
+}
+
+.footer__container-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 300px;
+  margin-left: 40px;
+}
+
+.footer__logo {
+  height: 200px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer__derechos {
+  text-align: center;
+  font-size: 18px;
+  color: var(--blanco);
+}
+.footer__container-ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 300px;
+}
+.footer__container-ubicacion__title {
+  font-size: 24px;
+  color: var(--blanco);
+}
+.footer__ubicacion-img {
+  height: 250px;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.footer__links {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    margin-right: 40px;
+  }
+}
+
+.footer__links__container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  .footer__links__container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 10px 0;
+  }
+}
+
+.footer__links__container__link {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 36px;
+}
+
+.footer__links__container__logo {
+  width: 42px;
+  height: 42px;
+  margin-right: 20px;
+}
+
+/*products de la page servicios */
+
+.products {
+  width: 100%;
+  height: 2200px;
+  background-color: var(--grisClaro);
+}
+
+.products-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.products-title {
+  height: 5%;
+  width: 100%;
+  color: var(--Negrito);
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.products-card-container {
+  height: 600px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--azulMarinoAutos);
+  border: solid 5px var(--grisOscuro);
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
+  box-shadow: 10px 10px 24px 8px rgba(0, 0, 0, 0.78);
+}
+
+.container-empresa {
+  height: 90%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.empresa-img {
+  height: 45%;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.empresa-title {
+  margin: 0;
+  font-size: 24px;
+  color: var(--blanco);
+}
+
+.empresa-desciption {
+  font-size: 18px;
+  color: var(--blanco);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-descripcion {
+  height: 90%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 36px;
+  color: var(--blanco);
+}
+
+.card-description {
+  font-size: 24px;
+  color: var(--blanco);
+}
+
+.container-imagenes {
+  height: 90%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.products-imagenes {
+  height: 45%;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.pagination {
+  color: black;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Servicios */
+
+.services {
+  width: 100%;
+
+  background-color: var(--azulMarinoAutos);
+}
+
+.services-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.services-title {
+  height: 5%;
+  width: 100%;
+  color: var(--blanco);
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-services {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card-segunda {
+  background-color: var(--grisClaro);
+  color: black;
+}
+
+.card-primera {
+  background-color: var(--azulMarinoAutos);
+  color: var(--blanco);
+}
+
+.card-tercera {
+  background-color: var(--azulMarinoAutos);
+  color: var(--blanco);
+}
+
+.card-services-img {
+  height: 80%;
+  width: 40%;
+  border-radius: 20px;
+}
+
+.card-services-container-description {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.card-services-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.card-services-desciption {
+  font-size: 24px;
+}
