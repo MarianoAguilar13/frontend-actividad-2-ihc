@@ -1,9 +1,12 @@
 {
   "name": "fontend",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "parcel serve ./index.html",
+    "build": "parcel build ./index.html",
+    "dev": "parcel serve ./index.html"
+  },
   "dependencies": {
     "parcel": "^2.10.0",
     "sweetalert2": "^11.7.32"
