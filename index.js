@@ -15,8 +15,6 @@ function main() {
 
     let valorDesde;
 
-    console.log("este es el servicio", servicio);
-
     if (servicio == "Desarrollo Web") {
       valorDesde = "Desde $50000,00";
     } else {
@@ -54,9 +52,8 @@ function main() {
 
       if (result) {
         Swal.fire("OK", "El mensaje se envio correctamente.", "success");
-        /*
-        alert("El mensaje se envio correctamente.");
-        */
+
+        //alert("El mensaje se envio correctamente.");
       }
       form.reset();
     } catch (e) {
