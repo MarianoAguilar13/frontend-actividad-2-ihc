@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "build": "yarn",
-    "dev": "parcel serve ./index.html",
-    "start": "parcel serve ./index.html"
-  },
+  "scripts": {},
   "dependencies": {
     "parcel": "^2.10.0",
     "sweetalert2": "^11.7.32"
