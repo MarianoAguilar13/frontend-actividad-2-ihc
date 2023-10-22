@@ -28,7 +28,7 @@
       <div class="container-fluid">
         <a
           class="navbar-brand"
-          href="https://marianoaguilar13.github.io/frontend-actividad-2-ihc/index.html"
+          href="https://frontend-actividad-2-ihc.vercel.app/index.html"
         >
           <img
             src="http://drive.google.com/uc?export=view&id=1WzAKnT0XVdfAyGZPAXnyt73Ho2Nq1QMm"
@@ -73,7 +73,7 @@
               <a
                 class="nav-link"
                 style="font-size: 24px; color: whitesmoke"
-                href="https://marianoaguilar13.github.io/frontend-actividad-2-ihc/servicios.html"
+                href="https://frontend-actividad-2-ihc.vercel.app/servicios.html"
                 >Servicios</a
               >
             </li>
@@ -81,7 +81,7 @@
               <a
                 class="nav-link"
                 style="font-size: 24px; color: whitesmoke"
-                href="https://marianoaguilar13.github.io/frontend-actividad-2-ihc/productos.html"
+                href="https://frontend-actividad-2-ihc.vercel.app/productos.html"
                 >Productos</a
               >
             </li>
@@ -214,8 +214,7 @@
             </div>
           </div>
         </div>
-        <a
-          href="https://marianoaguilar13.github.io/frontend-actividad-2-ihc/servicios.html"
+        <a href="https://frontend-actividad-2-ihc.vercel.app/servicios.html"
           ><button class="servicios-button-ver-mas">Ver más</button></a
         >
       </div>
@@ -239,7 +238,7 @@
                 the bulk of the card's content.
               </p>
               <a
-                href="https://marianoaguilar13.github.io/frontend-actividad-2-ihc/productos.html"
+                href="https://frontend-actividad-2-ihc.vercel.app/productos.html"
                 class="btn"
                 style="
                   border: solid 5px var(--grisOscuro);
@@ -247,7 +246,7 @@
                   border-radius: 20px;
                   color: var(--grisClaro);
                 "
-                >Go somewhere</a
+                >Ver más</a
               >
             </div>
           </div>
@@ -264,7 +263,7 @@
                 the bulk of the card's content.
               </p>
               <a
-                href="https://marianoaguilar13.github.io/frontend-actividad-2-ihc/productos.html"
+                href="https://frontend-actividad-2-ihc.vercel.app/productos.html"
                 class="btn"
                 style="
                   border: solid 5px var(--grisOscuro);
@@ -272,7 +271,7 @@
                   border-radius: 20px;
                   color: var(--grisClaro);
                 "
-                >Go somewhere</a
+                >Ver más</a
               >
             </div>
           </div>
@@ -289,7 +288,7 @@
                 the bulk of the card's content.
               </p>
               <a
-                href="https://marianoaguilar13.github.io/frontend-actividad-2-ihc/productos.html"
+                href="https://frontend-actividad-2-ihc.vercel.app/productos.html"
                 class="btn"
                 style="
                   border: solid 5px var(--grisOscuro);
@@ -297,7 +296,7 @@
                   border-radius: 20px;
                   color: var(--grisClaro);
                 "
-                >Go somewhere</a
+                >Ver más</a
               >
             </div>
           </div>
@@ -312,25 +311,28 @@
         <div class="contenedor-form">
           <form class="contenedor-form__form">
             <div class="contenedor-form__fieldset">
+              <p class="campos-obligatorios">(*) Campos Obligatorios</p>
               <label class="contenedor-form__label" for="name-input"
-                >Nombre/Empresa</label
+                >Nombre/Empresa *</label
               >
               <input
                 class="contenedor-form__input-text"
                 id="name-input"
                 name="nombre"
                 type="text"
+                placeholder="Mi empresa"
               />
             </div>
             <div class="contenedor-form__fieldset">
               <label class="contenedor-form__label" for="email-input"
-                >E-mail</label
+                >E-mail *</label
               >
               <input
                 class="contenedor-form__input-text"
                 id="email-input"
                 name="email"
                 type="text"
+                placeholder="miemail@gmail.com"
               />
             </div>
             <div class="contenedor-form__fieldset">
@@ -342,11 +344,12 @@
                 id="fecha-input"
                 name="fecha"
                 type="text"
+                placeholder="dd/mm/aaaa"
               />
             </div>
             <div class="contenedor-form__fieldset">
               <label class="contenedor-form__label" for="servicio-input"
-                >Servicio (seleccionar las opciones)</label
+                >Servicio (seleccionar las opciones) *</label
               >
               <div class="select-container">
                 <select
@@ -368,6 +371,7 @@
                 class="contenedor-form__textarea"
                 id="message-input"
                 name="msj"
+                placeholder="Deje sus dudas y preguntas aquí"
               ></textarea>
             </div>
             <div class="contenedor-form__button-section">
